@@ -46,7 +46,7 @@ export default function NavbarHero() {
           {/* CTA BUTTONS */}
           <div className="mt-12 flex flex-wrap justify-end gap-4">
             <button className="px-7 py-3 rounded-full border border-white/80 hover:bg-white hover:text-black transition duration-300">
-              Home
+                  <Link to="/menu">Browse Menu</Link>
             </button>
 
             <button className="px-7 py-3 rounded-full bg-green-500 hover:bg-green-600 transition duration-300 shadow-lg">
