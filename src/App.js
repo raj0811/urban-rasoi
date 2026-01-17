@@ -8,6 +8,7 @@ import MenuAndTiffin from "./Pages/service";
 import TiffinPlans from "./Pages/tiffin";
 import Footer from "./Components/Footer";
 import MandlaLaunchSection from "./Pages/avail";
+import OrderPlatforms from "./Pages/order";
 function App() {
   const [isOpen, setIsOpen] = useState(false);
   const toggleNavbar = () => {
@@ -19,6 +20,7 @@ function App() {
       <MandlaLaunchSection />
       <MenuAndTiffin />
       <TiffinPlans />
+      <OrderPlatforms />
       <Footer />
     </Router>
   );
