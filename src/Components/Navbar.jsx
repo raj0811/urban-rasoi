@@ -1,5 +1,6 @@
 import React from "react"
 import veg from "../assets/veg.jpg"
+import { Link } from "react-router-dom"
 export default function NavbarHero() {
   return (
     <header
@@ -19,7 +20,7 @@ export default function NavbarHero() {
 
         <ul className="hidden md:flex gap-8 font-medium">
           <li className="hover:text-green-400 cursor-pointer transition">
-            Browse Menu
+                <Link to="/menu">Browse Menu</Link>
           </li>
           <li className="hover:text-green-400 cursor-pointer transition">
             About
