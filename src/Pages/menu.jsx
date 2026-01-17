@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-
+import { Link } from "react-router-dom"
 export default function Menu() {
   const [menu, setMenu] = useState([]);
   const [loading, setLoading] = useState(true);
@@ -83,7 +83,8 @@ export default function Menu() {
       <div className="h-[18vh] bg-gradient-to-r from-gray-900 to-gray-800 text-white">
         <div className="max-w-4xl mx-auto h-full px-4 flex flex-col justify-center">
           <h1 className="text-2xl md:text-3xl font-semibold">
-            Urban Rasoi
+           
+                <Link to="/"> Urban Rasoi</Link>
           </h1>
 
           <div className="flex items-center gap-3 mt-2 text-sm text-gray-300">
