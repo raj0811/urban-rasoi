@@ -19,7 +19,7 @@ export default function NavbarHero() {
 
         <ul className="hidden md:flex gap-8 font-medium">
           <li className="hover:text-green-400 cursor-pointer transition">
-            Home
+            Browse Menu
           </li>
           <li className="hover:text-green-400 cursor-pointer transition">
             About

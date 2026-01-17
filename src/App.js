@@ -1,26 +1,44 @@
-
 import "./App.css";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { useState } from "react";
-import "react-toastify/dist/ReactToastify.css";
+
 import Navbar from "./Components/Navbar";
 import MenuAndTiffin from "./Pages/service";
 import TiffinPlans from "./Pages/tiffin";
 import Footer from "./Components/Footer";
 import MandlaLaunchSection from "./Pages/avail";
 import OrderPlatforms from "./Pages/order";
+import Menu from "./Pages/menu";
+
 function App() {
   const [isOpen, setIsOpen] = useState(false);
+
   const toggleNavbar = () => {
     setIsOpen(!isOpen);
   };
+
   return (
     <Router>
-      <Navbar />
-      <MandlaLaunchSection />
-      <MenuAndTiffin />
-      <TiffinPlans />
-      <OrderPlatforms />
+
+      <Routes>
+        {/* HOME PAGE */}
+        <Route
+          path="/"
+          element={
+            <>
+            <Navbar />
+              <MandlaLaunchSection />
+              <MenuAndTiffin />
+              <TiffinPlans />
+              <OrderPlatforms />
+            </>
+          }
+        />
+
+        {/* MENU PAGE */}
+        <Route path="/menu" element={<Menu />} />
+      </Routes>
+
       <Footer />
     </Router>
   );
